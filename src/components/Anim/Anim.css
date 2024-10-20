@@ -1,0 +1,107 @@
+.animated-text > h3 {
+   font-weight: 500;
+   font-size: 27px;
+   margin-left: 3px;
+}
+.animated-text > h1{
+   font-weight: 500;
+   font-size: 56px;
+   margin: -16px 0 -14px;
+}
+.animated-text > h2{
+   font-weight: 500;
+   font-size: 35px;
+   margin: 0;
+}
+.animated-text span {
+   position: relative;
+   color: var(--primary);
+   margin-left: 5px;
+}
+
+.animated-text span::before{
+   content: '';
+   animation: words 25s infinite;
+}
+
+@keyframes words {
+   0%, 20% {
+       content: 'Software Developer';
+   }
+   21%, 40% {
+       content: 'Full-Stack Develpoer';
+   }
+   41%, 60% {
+       content: 'UX/UI Designer';
+   }
+   61%, 80% {
+       content: 'Back End & Front End';
+   }  
+   81%, 100% {
+       content: 'Cientista de dados';
+   }
+}
+
+.animated-text span::after{
+   content: '';
+   position: absolute;
+   width: calc(100% + 18px);
+   height: 115%;
+   right: -10px;
+   margin: 0 0 0 -5px;
+   border-left: 2.5px solid var(--primary);
+   background: var(--background); /* Precisa ser da cor do fundo */
+   transition: 0.3s;
+   animation: cursor 1s infinite, typing 25s steps(18) infinite;
+}
+
+@keyframes cursor {
+   0% {
+       border-left: 3px solid var(--background); /* Precisa ser da cor do fundo */
+       transition: 0.4s;
+   }
+}
+
+@keyframes typing {
+   10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+       width: 0;
+   }
+   5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+       width: calc(100% + 10px);
+   }
+}
+
+@media (max-width: 600px) {
+
+  .animated-text {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      width: 300px;
+      margin: 0px 0px 0px 7px;
+  }
+
+  .animated-text > h3 {
+      font-size: 23px;
+      margin-left: 2px;
+  }
+
+  .animated-text > h1 {
+      font-size: 40px;
+      margin: -10px 0px 0px 0px;
+  }
+
+  .animated-text > h2 {
+      font-size: 21px;
+      margin-top: -5px;
+  }
+
+  .animated-text span {
+      margin-left: 3px;
+  }
+
+  .animated-text span::after{
+      width: calc(100% + 5px);
+      height: 118%;
+  }
+}

@@ -1,0 +1,181 @@
+/* Estilos Gerais */
+@media (min-width:800px) {
+   .nav-links a::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: 2px;
+      position: absolute;
+      background-color: var(--not-active);
+      transition: 0.23s;
+   }
+
+   .nav-links a.active::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: 2px;
+      position: absolute;
+      background-color: var(--active);
+      transition: 0.23s;
+   }
+   
+   .nav-links a:hover::after {
+      width: 100%;
+   }
+
+   .nav-logo a:hover {
+      color: var(--hover-100);
+   }
+}
+
+nav {
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   top: 15px;
+   left: 0;
+   width: 100%;
+   height: 60px;
+   z-index: 10;
+}
+
+.Navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 1110px;
+   height: 50px;
+   padding: 10px 20px;
+   border-radius: 15px;
+   border: 1px solid var(--primary);
+   background-color: transparent;
+   backdrop-filter: blur(15px);
+   box-shadow: var(--shadow);
+}
+
+.toggleMenu {
+   display: none;
+   flex-direction: column;
+   cursor: pointer;
+   padding: 5px;
+   margin-right: -5px;
+}
+
+.toggleMenu .bar {
+   width: 25px;
+   height: 2px;
+   margin: 2.5px;
+   background-color: var(--primary);
+}
+
+.nav-logo a {
+   font-size: 20px;
+   color: var(--primary);
+   transition: 0.2s;
+}
+
+.nav-links {
+   display: flex;
+   justify-content: space-around;
+   transition: 0.3s ease;
+}
+
+.nav-links a {
+   font-size: 13px;
+   margin-left: 0px;
+   margin-right: 0px;
+   padding: 5px;
+   user-select: none;
+   color: var(--not-active);
+}
+
+.nav-link-btn {
+   padding: 5px 8px;
+   border: 1px solid aquamarine;
+   border-radius: 8px;
+   background-color: aquamarine;
+}
+
+.nav-links a {
+   transition: 0.3s;
+   position: relative;
+}
+
+.nav-links a.active {
+   color: var(--active);
+   transition: 0.3s;
+}
+
+@media (max-width:800px) {
+   .Navbar a:active {
+      color: var(--hover-100);
+   }
+
+   nav {
+      top: 20px;
+   }
+
+   .Navbar {
+      position: relative;
+      max-width: 80%;
+      border-color: var(--primary-100);
+   }
+
+   .toggleMenu {
+      display: flex;
+   }
+
+   .nav-links {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      overflow: hidden;
+      top: 75px;
+      right: 0px;
+      width: 100%;
+      height: 0px;
+      opacity: 1;
+      gap: 2px;
+      padding: 0px 0px 0px 0px;
+      border-radius: 15px;
+      border: 0px solid var(--primary);
+      background: var(--active-nav-background);
+      transition: 0.4s;
+   }
+
+   .nav-links a {
+      width: 95%;
+      font-size: 14px;
+      text-align: center;
+      padding: 5px 0 5px 0;
+      border-radius: 10px;
+   }
+
+   .nav-links.open {
+      top: 75px;
+      right: 0px;
+      width: 100%;
+      height: 120px;
+      border: 1px solid var(--primary);
+      opacity: 1;
+   }
+
+   .nav-links.open a {
+      width: 95%;
+      font-size: 14px;
+      text-align: center;
+      padding: 5px 0 5px 0;
+      color: var(--not-active-M);
+   }
+
+   .nav-links a.active {
+      text-decoration: none;
+      color: var(--active-M);
+      background-color: var(--active-background);
+   }
+}

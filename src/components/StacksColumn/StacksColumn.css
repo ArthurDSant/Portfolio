@@ -1,0 +1,120 @@
+@media (min-width:800px) {
+   .stack-box:hover {
+      color: var(--primary);
+      border-color: var(--primary);
+      background-color: var(--back-hover);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+   }
+}
+
+.column {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   padding-bottom: 20px;
+}
+
+.stacks-sections {
+   max-width: 1000px;
+   margin: 0 0 20px;
+}
+
+.frontend {
+   color: var(--primary);
+   font-size: 32px;
+   font-weight: 500;
+   padding: 50px 0 10px 10px;
+}
+
+.backend {
+   color: var(--primary);
+   font-size: 32px;
+   font-weight: 500;
+   padding: 15px 0 10px 10px;
+}
+
+.stacks-sections i {
+   font-size: 22px;
+   font-weight: 700;
+}
+
+.stacks-section {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 15px;
+   flex-wrap: wrap;
+   padding: 0 28px;
+}
+
+.stack-box {
+   user-select: none;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: start;
+   width: 110px;
+   height: 100px;
+   padding: 5px;
+   border-radius: 12px;
+   border: 1px solid var(--border);
+   background-color: var(--about-stack);
+   box-shadow: var(--shadow);
+   transition: 0.17s;
+}
+.stack-box h1 {
+   font-size: 16px;
+   font-weight: 500;
+   margin: 11.5px 0 0;
+}
+.stack-box svg {
+   width: 40px;
+   height: 40px;
+   margin: 5px 0 5px;
+}
+
+.small-stack svg {
+   width: 50px;
+   height: 50px;
+   margin: -2px 0 5px;
+}
+
+
+
+
+@media (max-width:800px) {
+   .frontend {
+      padding: 40px 30px 10px 30px;
+   }
+   
+   .backend {
+      padding: 15px 30px 10px 30px;
+   }
+
+   .stacks-section {
+      justify-content: center;
+   }
+
+   .stack-box {
+      width: 140px;
+      height: 120px;
+      border-color: var(--border-100);
+      transition: 0.07s;
+   }
+
+   .stack-box h1 {
+      font-size: 18px;
+      margin: 12px 0 0;
+   }
+   .stack-box svg {
+      width: 50px;
+      height: 50px;
+      margin: 10px 0 5px;
+   }
+   .small-stack svg {
+      width: 70px;
+      height: 70px;
+   }
+}

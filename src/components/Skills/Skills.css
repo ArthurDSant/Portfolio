@@ -1,0 +1,149 @@
+@media (min-width:800px) {
+   .skill:hover {
+   border-color: var(--primary);
+   background-color: var(--back-hover);
+   transform: translateY(-3px);
+   box-shadow: var(--shadow-hover);
+   }
+
+   .skill a:hover {
+      color: var(--hover-100);
+   }
+}
+
+.skills_container {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   height: 100vh;
+   margin: 10px 0px 0px 100px;
+}
+
+.skills {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+   text-align: center;
+   padding-top: 50px;
+}
+
+.skill {
+   display: flex;
+   align-items: left;
+   flex-direction: column;
+   justify-content: start;
+   text-align: start;
+   width: 185px;
+   height: 185px;
+   padding: 15px;
+   border: 1px solid var(--skills-border);
+   background: var(--skills-background);
+   color: --skills-color;
+   box-shadow: var(--shadow);
+   transition: 0.17s;
+}
+
+.skill svg {
+   width: 27px;
+   height: 27px;
+   margin: 10px 0px 0px 4px;
+}
+
+.skill h2 {
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 4px 3px 0px;
+}
+
+.skill-text {
+   height: 85px;
+   padding: 0 4px;
+}
+
+.skill p {
+   font-size: 0.84rem;
+}
+
+.skill a {
+   font-size: 11.5px;
+   padding-left: 4px;
+   transition: 0.2s;
+}
+
+.skill a svg{
+   width: 12px;
+   height: 12.5px;
+   margin-bottom: -1.5px;
+   margin-left: 2.5px;
+}
+
+.one {
+   color: var(--one);
+} .two {
+   color: var(--two);
+} .three {
+   color: var(--three);
+} .four {
+   color: var(--four);
+}
+
+@media (max-width:800px) {
+   .skill:hover {
+      border: 1px solid var(--primary);
+      transform: translateY(-5px);
+   }
+
+   .skills_container {
+      width: 100%;
+      height: 425px;
+      margin: 0;
+      padding: 0 0 50px 0;
+   }
+
+   .skills {
+      padding-top: 0;
+   }
+
+   .skill {
+      max-width: 145px;
+      height: 160px;
+      padding: 15.5px;
+      border: 1px solid var(--border-200);
+      transition: 0.08s;
+   }
+
+   .skill svg {
+      width: 30px;
+      height: 30px;
+      margin: 1px 0 0 -1.5px;
+   }
+
+   .skill h2 {
+      font-size: 14.5px;
+      margin: 3px 0 1px 0;
+      padding: 0;
+   }
+
+   .skill-text {
+      height: 90px;
+      padding: 0;
+   }
+
+   .skill p {
+      font-size: 12px;
+   }
+
+   .skill a {
+      font-size: 11px;
+      padding-left: 0;
+   }
+
+   .skill a svg{
+      width: 10px;
+      height: 10px;
+      margin-bottom: -1px;
+      margin-left: 2px;
+   }
+}

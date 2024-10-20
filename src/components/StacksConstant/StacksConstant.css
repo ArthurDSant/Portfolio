@@ -1,0 +1,128 @@
+@keyframes slide {
+   from{
+       transform: translateX(0);
+   }
+   to{
+       transform: translateX(-100%);
+   }
+}
+
+.const-stacks {
+   width: 510px;
+   height: 120px;
+   margin-top: 10px;
+}
+
+.const-text-one {
+   font-size: 12px;
+   margin: 0 0% 0.5%; 
+   display: flex;
+   align-items: center;
+   text-shadow: 1px 1.3px 4px #00000000;
+}
+
+.const-text-two {
+   font-size: 12px;
+   margin: 10px 10px 5px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   text-shadow: 1px 1.3px 4px #00000000;
+}
+
+.const-stacks p {
+   margin: 0 3px;
+   font-weight: 400;
+}
+
+.p-pink {
+   color: #ff19d9;
+}
+
+.p-green {
+   color: #24e95f;
+}
+
+.p-white {
+   color: var(--primary);
+}
+
+.stacks {
+   overflow: hidden;
+   padding: 10px 0px;
+   margin: 0% 0% 0% 0%;
+   white-space: nowrap;
+   user-select: none;
+   position: relative;
+   background-image: linear-gradient(to right, #ffffff00, #ffffff00);
+}
+
+.stacks-slide {
+   display: inline-block;
+   animation: slide 45s infinite linear;
+}
+
+.stacks-slide img {
+   width: 35px;
+   height: 35px;
+   margin: 0px 10px;
+}
+
+.stacks:hover .stacks-slide {
+   animation-play-state: paused;
+}
+
+.stacks:before,
+.stacks:after {
+   position: absolute;
+   top: 0%;
+   width: 70px;
+   height: 50px;
+   content: "";
+   z-index: 1;
+}
+
+.stacks:before {
+   left: 0%;
+   background: linear-gradient(to right, var(--background), #ffffff00);
+}
+
+.stacks:after {
+   right: 0%;
+   background: linear-gradient(to left, var(--background), #ffffff00);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 600px) {
+   
+   .const-stacks {
+      width: 370px;
+      height: 85px;
+   }
+
+   .const-stacks p {
+      margin: 0 1%;
+   }
+
+   .const-text-one {
+      margin: 0 4px; 
+   }
+
+   .const-text-two {
+      margin: 0;
+      padding-top: 0;
+  }
+
+   .stacks {
+      margin: 0% 2% 0;
+   }
+
+   .stacks-slide {
+      animation: slide 50s infinite linear;
+   }
+
+   .stacks:before,
+   .stacks:after {
+      background: transparent;
+   }
+}
