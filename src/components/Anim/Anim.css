@@ -26,19 +26,19 @@
 
 @keyframes words {
    0%, 20% {
-       content: 'Software Developer';
+       content: 'Data scientist';
    }
    21%, 40% {
        content: 'Full-Stack Develpoer';
    }
    41%, 60% {
-       content: 'UX/UI Designer';
+       content: 'Data Analyst';
    }
    61%, 80% {
        content: 'Back End & Front End';
-   }  
+   }
    81%, 100% {
-       content: 'Cientista de dados';
+       content: 'Software developer';
    }
 }
 
