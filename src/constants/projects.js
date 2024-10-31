@@ -17,7 +17,6 @@ export const PROJECTS = [
         classButtonCant: "button-project deploy-btn cant-btn",
         github: "https://github.com/ArthurSantDev/DataAnalysis-Agricultural_Raw_Material",
         deploy: "",
-
     },
     {
         id: 2,
