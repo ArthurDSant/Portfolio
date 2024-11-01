@@ -14,23 +14,7 @@ import {
   SiVite, SiTypescript, SiJavascript 
 } from "react-icons/si"; 
 
-const stacks = {
-  frontend: [
-    { name: "JavaScript", icon: <SiJavascript /> },
-    { name: "TypeScript", icon: <SiTypescript /> },
-    { name: "Vite.Js", icon: <SiVite /> },
-    { name: "React", icon: <SiReact /> },
-    { name: "Router-Dom", icon: <SiReactrouter /> },
-    { name: "Next.Js", icon: <SiNextdotjs /> },
-    { name: "Vue.Js", icon: <FaVuejs /> },
-    { name: "Scroll Reveal", icon: <SiScrollreveal /> },
-    { name: "Tailwind", icon: <SiTailwindcss /> },
-    { name: "Mui", icon: <SiMui /> },
-    { name: "Sass", icon: <FaSass /> },
-    { name: "Styled-Comp.", icon: <SiStyledcomponents />, small: true },
-    { name: "Redux", icon: <SiRedux /> },
-    { name: "Bootstrap", icon: <FaBootstrap /> },
-  ],
+const stacks = {  
   backend: [
     { name: "Python", icon: <SiPython /> },
     { name: "Django", icon: <SiDjango /> },
@@ -46,6 +30,22 @@ const stacks = {
     { name: "SQL Server", icon: <SiMicrosoftsqlserver /> },
     { name: "PowerBi", icon: <SiPowerbi /> },
     { name: "Git", icon: <FaGithubAlt /> },
+  ],
+  frontend: [
+    { name: "JavaScript", icon: <SiJavascript /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "Vite.Js", icon: <SiVite /> },
+    { name: "React", icon: <SiReact /> },
+    { name: "Router-Dom", icon: <SiReactrouter /> },
+    { name: "Next.Js", icon: <SiNextdotjs /> },
+    { name: "Vue.Js", icon: <FaVuejs /> },
+    { name: "Scroll Reveal", icon: <SiScrollreveal /> },
+    { name: "Tailwind", icon: <SiTailwindcss /> },
+    { name: "Mui", icon: <SiMui /> },
+    { name: "Sass", icon: <FaSass /> },
+    { name: "Styled-Comp.", icon: <SiStyledcomponents />, small: true },
+    { name: "Redux", icon: <SiRedux /> },
+    { name: "Bootstrap", icon: <FaBootstrap /> },
   ],
 };
 

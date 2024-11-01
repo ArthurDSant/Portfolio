@@ -4,7 +4,7 @@ export const STACKS = [
   { id: 2, src: "/assets/stacks/node.svg", alt: "Node.js" },
   { id: 3, src: "/assets/stacks/nodemon.svg", alt: "Nodemon" },
   { id: 4, src: "/assets/stacks/axios.svg", alt: "Axios" },
-  // { id: 5, src: "/assets/stacks/express.svg", alt: "Express.js" },
+  { id: 5, src: "/assets/stacks/express.svg", alt: "Express.js" },
 
   { id: 6, src: "/assets/stacks/python.svg", alt: "Python" },
   { id: 7, src: "/assets/stacks/django.svg", alt: "Django" },
@@ -54,4 +54,6 @@ export const STACKS = [
   { id: 48, src: "/assets/stacks/github-vs.svg", alt: "GitHub VS Code" },
   { id: 49, src: "/assets/stacks/gitlab.svg", alt: "GitLab" },
   { id: 50, src: "/assets/stacks/vercel.svg", alt: "Vercel" },
+
+  { id: 200, src: "/assets/stacks/csv.svg", alt: "csv" },
 ];

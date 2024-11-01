@@ -219,12 +219,12 @@
    }
 
    .project-mark {
-      top: -208px;
-      right: -31px;
+      margin-top: -184px;
+      margin-right: 12px;
    }
    
    .project-mark img{
-      width: 42px;
+      width: 36px;
    }
    
    .project-mark-duble {

@@ -1,5 +1,5 @@
 import '../../CSS/Projects.css';
-import React, { useEffect } from "react";
+import react, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import ScrollReveal from "scrollreveal";
 import { Helmet } from 'react-helmet';
@@ -20,7 +20,7 @@ const index = () => {
     }, []);
 
     // Filtrando e ordenando os projetos
-    const selectedIDs = [1, 8, 9];
+    const selectedIDs = [8, 10, 9];
     const filteredProjects = PROJECTS.filter(project => selectedIDs.includes(project.id));
     const orderedProjects = selectedIDs.map(id => filteredProjects.find(project => project.id === id));
 
