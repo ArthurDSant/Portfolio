@@ -2,7 +2,7 @@ export const PROJECTS = [
     {
         id: 1,
         title: "Data Analysis - Cost",
-        image: "/assets/projects/da-agricula.svg",
+        image: "/assets/projects/da_agricula.svg",
         description: "Este projeto Python realiza a análise e visualização dos dados de preços de matérias-primas agrícolas usando um banco de dados do Kaggle. Com formato compatível para Júpiter-Notebook e Colab.",
         stack: [
             "jupyter", "python", "pandas", "numpy", "seaborn", "matplotlib", "colab"
