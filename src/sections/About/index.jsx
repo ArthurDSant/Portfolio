@@ -60,12 +60,9 @@ const index = () => {
                      Um pouco sobre mim
                   </h2>
                   <p>
-                     Me chamo Arthur Sant e sou um <i>desenvolvedor Full Stack</i>.  
-                     Entrei no mundo da programação com intuito de achar soluções para problemas como  <i>layout, 
-                     usabilidade e fluidez</i>, o que considero ser meu forte. Como estou me especializando para 
-                     futuramente me tornar referência na área, busco sempre aprender e me atualizar sobre as <i>principais 
-                     técnicas e tecnologias do mercado</i>, tendo como minhas mais fortes características a capacidade de compreender 
-                     e elevar o código e funcionalidades das aplicações em que trabalho.
+                  Sou Arthur Gabriel D. Sant, Cientista de Dados e Desenvolvedor de Software. Combinando análise de dados e programação, busco transformar problemas complexos em <i>soluções práticas e estratégicas</i>. 
+                  Tenho facilidade em aprender rapidamente tecnologias novas e por em prática metodologias de desenvolvimento, sempre buscando melhorar resultados técnicos e interpessoais com a equipe. Com relação a código 
+                  tenho mais expertise em <i>Python</i>, <i>R</i> e <i>JavaScript</i>, dominando suas Libs e Frameworks como Pandas, NumPy, React.Js entre outros.
                   </p>
                </div>
             </div>

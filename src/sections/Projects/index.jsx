@@ -20,7 +20,7 @@ const index = () => {
     }, []);
 
     // Filtrando e ordenando os projetos
-    const selectedIDs = [8, 10, 9];
+    const selectedIDs = [10, 7, 9, 11];
     const filteredProjects = PROJECTS.filter(project => selectedIDs.includes(project.id));
     const orderedProjects = selectedIDs.map(id => filteredProjects.find(project => project.id === id));
 

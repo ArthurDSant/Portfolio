@@ -1,7 +1,8 @@
-import './StacksColumn.css';
+ import './StacksColumn.css';
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
+import { RiFileExcel2Line } from "react-icons/ri";
 import { 
   FaJava, FaRProject, FaGithubAlt, FaNodeJs, FaVuejs, 
   FaBootstrap, FaSass 
@@ -18,17 +19,17 @@ const stacks = {
   backend: [
     { name: "Python", icon: <SiPython /> },
     { name: "Django", icon: <SiDjango /> },
+    { name: "PowerBi", icon: <SiPowerbi /> },
+    { name: "Excel", icon: <RiFileExcel2Line /> },
     { name: "R", icon: <FaRProject /> },
     { name: "Java", icon: <FaJava /> },
     { name: "Node.js", icon: <FaNodeJs /> },
     { name: "Nodemon", icon: <SiNodemon /> },
     { name: "Express", icon: <SiExpress /> },
-    { name: "PHP", icon: <SiPhp /> },
     { name: "PostgreSQL", icon: <SiPostgresql /> },
     { name: "MongoDB", icon: <SiMongodb /> },
     { name: "MySQL", icon: <SiMysql />, small: true },
     { name: "SQL Server", icon: <SiMicrosoftsqlserver /> },
-    { name: "PowerBi", icon: <SiPowerbi /> },
     { name: "Git", icon: <FaGithubAlt /> },
   ],
   frontend: [

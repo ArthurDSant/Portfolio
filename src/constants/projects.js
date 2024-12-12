@@ -36,7 +36,6 @@ export const PROJECTS = [
         classButtonCant: "button-project deploy-btn cant-btn",
         github: "https://github.com/ArthurSantDev/HighTrip",
         deploy: "https://hightrip.vercel.app/",
-
     },      
     {
         id: 3,
@@ -116,7 +115,7 @@ export const PROJECTS = [
     },    
     {
         id: 7,
-        title: "Beats",
+        title: "Beats by Dre",
         image: "/assets/projects/beats.svg",
         description: "Landing Page para marca Beats, possuindo animações dinâmicas por meio da tecnologia ScrollReveal.Js, UX/UI Design moderno e responsivo para diversos tamanhos de Smartphones.",
         stack: [
@@ -154,7 +153,26 @@ export const PROJECTS = [
     },
     {
         id: 9,
-        title: "Data Analysis - Cost",
+        title: "DA - Gestão de vendas",
+        image: "/assets/projects/bi_sm.svg",
+        description: "Este projeto é um dashboard interativo projetado para visualização e apresentação de dados, visando apoiar a tomada de decisão. Utilizando banco de dados .xlsx com tratamento de dados e curadoria de área.",
+        stack: [
+            "power-bi", "excel", "figma",
+        ],
+        // markfront: "",
+        // markback: "/assets/projects/mark_back.svg",
+        classMark: "project-mark",
+        none: "",
+        class: "project",
+        classReverse: "project reverse",
+        classButton: "button-project deploy-btn",
+        classButtonCant: "button-project deploy-btn cant-btn",
+        github: "https://github.com/ArthurDSant/BI-Sales_Management",
+        deploy: "",
+    },
+    {
+        id: 10,
+        title: "DA - Material agrícula",
         image: "/assets/projects/da_agricula.svg",
         description: "Este projeto Python realiza a análise e visualização dos dados de preços de matérias-primas agrícolas usando um banco de dados do Kaggle com arquivo no formato .csv. Estruturado no Jupyter-Notebook e compatível para Google Colab",
         stack: [
@@ -172,7 +190,7 @@ export const PROJECTS = [
         deploy: "",
     },
     {
-        id: 10,
+        id: 11,
         title: "API RestFull",
         image: "/assets/projects/fastapi.svg",
         description: "API RestFull utilizando Python como base, possuindo as funções GET, POST, PUT, UPDATE e DELETE. Com implementação de pesquisa por categorias como nos exemplos do arquivo Test_Server.py no repositório.",
